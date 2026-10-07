@@ -629,7 +629,45 @@
 
     }
 
-  </style>
+  
+:root{--orange:#f36c21;--ink:#111827}
+section{scroll-margin-top:90px} :focus-visible{outline:3px solid #f36c21;outline-offset:5px}
+.skip{position:absolute;left:12px;top:-100px;background:white;padding:12px;z-index:2000}.skip:focus{top:12px}
+.hero{background:linear-gradient(90deg,rgba(9,19,31,.98),rgba(9,19,31,.75)),url('https://raw.githubusercontent.com/MeuReurbix/c7mobi-cdl/75e85b9d3660c001adfc73bc0650b6f85dc5b2c9/assets/city-night.png') center/cover;padding:90px 0}
+.hero h1{font-size:clamp(2.8rem,5.7vw,5rem);line-height:1.05;letter-spacing:-2.8px}.hero h1 em{font-style:normal;color:#ff955d}
+.hero-grid{gap:40px;grid-template-columns:1.15fr .85fr}.hero-card{padding:26px;background:rgba(17,24,39,.88)}
+.hero-note{font-size:.8rem;color:#bdc7d5;margin-top:18px}
+.brand{gap:0;font-style:italic}.brand-c7{color:var(--orange)}.brand-movi{color:var(--ink)}
+.menu{gap:20px;font-size:.86rem}.nav-toggle{display:none;background:white;border:1px solid #dedfe4;border-radius:8px;padding:10px;font:inherit}
+.section-kicker,.card-number{color:#ad4108}.dark .section-kicker,.dark .card-number,.contact .section-kicker{color:#ff955d}
+.btn,.nav-cta{background:#c34a0a;border-color:#c34a0a}.btn:hover,.nav-cta:hover{background:#a83d05}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.editorial-image{border-radius:22px;width:100%;aspect-ratio:1.3;object-fit:cover;background:#172638}
+.caption{font-size:.8rem;color:#687182;margin-top:10px}
+.segment-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.segment-tags span{border:1px solid #ddd;padding:9px 16px;border-radius:30px;font-size:.85rem}
+.platform-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.platform-card{background:#fff;border:1px solid #e6e8ed;border-radius:16px;padding:27px}
+.platform-card b{display:block;font-size:1.2rem;margin-bottom:8px}.platform-card p{color:#5b6472}
+.flow-item{align-items:start;font-weight:400}.flow-item b{display:block}.flow-item small{display:block;color:#5b6472;line-height:1.4}
+.tinted{background:#f4f5f7}.diagnostic-panel{background:#fff;border:1px solid #e1e4e9;padding:32px;border-radius:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:block;font-weight:700;font-size:.86rem}
+input,select{display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #a9b0bc;border-radius:8px;font:inherit;background:#fff;color:#111827;min-height:46px}
+.form-wide{grid-column:1/-1}.form-note{font-size:.85rem;color:#566171;margin:18px 0}
+button.btn{font:inherit;cursor:pointer;font-weight:700}.form-result{margin-top:15px}.form-result:empty{display:none}
+.diagnostic-copy h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.12;letter-spacing:-1.5px;margin-bottom:22px}
+.diagnostic-copy p{color:#596474;margin-bottom:20px}.check-list{list-style:none}.check-list li{padding:10px 0;border-bottom:1px solid #ddd}.check-list li::before{content:'↗';color:#ad4108;margin-right:12px}
+.faq{max-width:850px;margin:auto}details{border-bottom:1px solid #ddd;padding:20px 0}summary{cursor:pointer;font-weight:700;font-size:1.06rem}details p{margin-top:14px;color:#5b6472}
+.partner{border-left:4px solid var(--orange);padding-left:24px;margin-top:28px}
+.link-orange{color:#a93d04;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.privacy{padding-top:36px;padding-bottom:36px;background:#f7f8fa}.privacy p{font-size:.9rem;color:#5b6472;margin-top:10px}
+.footer-legal,.footer-copy{color:#909baa;font-size:10px}.footer-social{line-height:2}.float-contact{position:fixed;bottom:20px;right:20px;z-index:100;background:#111827;color:white;border:1px solid #f36c21;padding:12px 18px;border-radius:30px;box-shadow:0 5px 25px #0003;font-size:.88rem;font-weight:700}
+@media(max-width:1000px){.menu{gap:13px}.hero-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.nav-toggle{display:block}.menu{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:76px;left:0;right:0;background:white;padding:24px 5%;box-shadow:0 8px 15px #0001}.menu[hidden]{display:none}.menu a{padding:10px}.hero-grid,.split{grid-template-columns:1fr}.hero-card{max-width:600px}.platform-grid{grid-template-columns:1fr}.hero{padding:64px 0}.split{gap:28px}}
+@media(min-width:901px){.menu[hidden]{display:flex}}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.diagnostic-panel{padding:22px}.hero h1{letter-spacing:-1.8px}.menu{top:68px}.float-contact{bottom:12px;right:12px;font-size:.8rem}.hero-actions a{width:100%}.editorial-image{aspect-ratio:1.2}.form-wide{grid-column:auto}footer{padding-bottom:80px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+</style>
 
   <script type="application/ld+json">
   {
@@ -655,15 +693,21 @@
   }
   </script>
 
+<link rel="canonical" href="https://c7movi.com.br/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://raw.githubusercontent.com/MeuReurbix/c7mobi-cdl/75e85b9d3660c001adfc73bc0650b6f85dc5b2c9/assets/city-night.png">
+<meta property="og:image:alt" content="Cidade à noite, cenário da última milha">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
 <header>
 
   <div class="container">
 
-    <nav>
+    <nav aria-label="Navegação principal">
 
       <a href="#inicio"
          class="brand"
@@ -674,7 +718,8 @@
 
       </a>
 
-      <div class="menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<div class="menu" id="menu" hidden>
 
         <a href="#solucao">
           Solução
@@ -684,9 +729,7 @@
           Como funciona
         </a>
 
-        <a href="#empresa">
-          Sobre
-        </a>
+        <a href="#plataforma">Plataforma</a><a href="#diagnostico">Precificação</a><a href="#empresa">Sobre</a>
 
         <a href="#contato"
            class="nav-cta">
@@ -702,7 +745,7 @@
 </header>
 
 
-<main>
+<main id="conteudo">
 
 
 <section class="hero"
@@ -716,34 +759,15 @@
         Inteligência de Última Milha
       </div>
 
-      <h1>
-        A venda não termina no caixa.
-      </h1>
+      <h1>A venda não termina no caixa.<br><em>Ela termina na entrega.</em></h1>
 
-      <p class="hero-description">
-
-        Ela termina na entrega.
-
-        A C7MOVI conecta comércio,
-        operação logística,
-        entregadores e clientes
-        para transformar a última milha
-        em uma operação mais inteligente,
-        organizada e eficiente.
-
-      </p>
+      <p class="hero-description">Inteligência para mover a última milha. A C7MOVI une tecnologia, processos e gestão para conectar seu comércio, os entregadores e a experiência de quem recebe.</p>
 
       <div class="hero-actions">
 
-        <a class="btn"
-           href="#solucao">
-          Conheça a C7MOVI
-        </a>
+        <a class="btn" href="#diagnostico">Conheça a precificação inteligente ↗</a>
 
-        <a class="btn-outline"
-           href="#contato">
-          Fale conosco
-        </a>
+        <a class="btn-outline" href="https://wa.me/5527992648117?text=Ol%C3%A1!%20Quero%20conhecer%20a%20C7MOVI%20e%20solicitar%20uma%20demonstra%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Solicitar demonstração</a>
 
       </div>
 
@@ -757,34 +781,8 @@
       </div>
 
       <div class="flow">
-
-        <div class="flow-item">
-          <span class="flow-number">01</span>
-          Pedido
-        </div>
-
-        <div class="flow-item">
-          <span class="flow-number">02</span>
-          Agrupamento inteligente
-        </div>
-
-        <div class="flow-item">
-          <span class="flow-number">03</span>
-          Rota e execução
-        </div>
-
-        <div class="flow-item">
-          <span class="flow-number">04</span>
-          Entrega ao cliente
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<div class="flow-item"><span class="flow-number">01</span><div><b>Pedido</b><small>Organizar a demanda do comércio.</small></div></div><div class="flow-item"><span class="flow-number">02</span><div><b>Agrupamento</b><small>Planejar pedidos e capacidade.</small></div></div><div class="flow-item"><span class="flow-number">03</span><div><b>Rota e execução</b><small>Conectar planejamento e entrega.</small></div></div><div class="flow-item"><span class="flow-number">04</span><div><b>Cliente</b><small>Dar visibilidade à jornada.</small></div></div>
+</div><p class="hero-note">Tecnologia + operação + inteligência.</p></div></div></section>
 
 
 <section id="solucao">
@@ -874,8 +872,15 @@
 </section>
 
 
-<section class="dark"
-         id="como-funciona">
+<section class="tinted" id="plataforma"><div class="container">
+<div class="section-kicker">Plataforma C7MOVI</div>
+<div class="section-title"><h2>Uma visão para cada ponta da entrega.</h2><p>O comércio planeja. O entregador executa. O cliente acompanha. A operação ganha contexto para decidir.</p></div>
+<div class="platform-grid">
+<article class="platform-card"><div class="card-number">COMÉRCIO</div><b>Gestão da operação</b><p>Organização dos pedidos, análise da demanda e indicadores para apoiar decisões sobre custos e capacidade.</p></article>
+<article class="platform-card"><div class="card-number">ENTREGADOR</div><b>Execução conectada</b><p>Uma jornada organizada para orientar a rota e acompanhar o andamento das entregas.</p></article>
+<article class="platform-card"><div class="card-number">CLIENTE</div><b>Experiência com visibilidade</b><p>Acompanhamento da jornada de entrega para aproximar a compra de quem espera o pedido.</p></article>
+</div><p class="caption">Conheça em uma demonstração os recursos disponíveis para o desenho da sua operação.</p></div></section>
+<section class="dark" id="como-funciona">
 
   <div class="container">
 
@@ -964,32 +969,12 @@
 </section>
 
 
-<section class="statement">
-
-  <div class="container">
-
-    <div class="highlight">
-
-      Farmácias são o primeiro vertical.
-
-      <span>
-        Não o limite.
-      </span>
-
-    </div>
-
-    <p class="highlight-small">
-
-      A arquitetura da C7MOVI foi concebida
-      para evoluir com diferentes segmentos
-      que dependem de uma última milha
-      eficiente e conectada.
-
-    </p>
-
-  </div>
-
-</section>
+<section class="statement" id="segmentos"><div class="container split"><div>
+<div class="section-kicker">Começamos onde a entrega faz diferença</div>
+<h2 class="highlight">Farmácias são o primeiro vertical.<br><span>Não o limite.</span></h2>
+<p class="highlight-small">A rotina das farmácias pede agilidade, organização e atenção à experiência do cliente. É o ponto de partida de uma arquitetura pensada para outros negócios do varejo.</p>
+<div class="segment-tags"><span>Farmácias</span><span>Varejo local</span><span>Redes de lojas</span><span>Outros segmentos</span></div>
+</div><figure><img class="editorial-image" src="https://raw.githubusercontent.com/MeuReurbix/c7mobi-cdl/75e85b9d3660c001adfc73bc0650b6f85dc5b2c9/assets/city-sunset.png" alt="Cidade ao pôr do sol, conectando negócios e pessoas" loading="lazy" width="1536" height="1024"><figcaption class="caption">Uma última milha que aproxima o comércio da cidade.</figcaption></figure></div></section>
 
 
 <section>
@@ -1081,8 +1066,27 @@
 </section>
 
 
-<section class="about"
-         id="empresa">
+<section class="tinted" id="diagnostico"><div class="container split">
+<div class="diagnostic-copy"><div class="section-kicker">Precificação inteligente</div><h2>Você conhece o custo real da sua entrega?</h2><p>O preço do frete é apenas uma parte da conta. Volume, horários, equipe, distância e nível de serviço ajudam a entender o que sua operação precisa.</p>
+<ul class="check-list"><li>Demanda e capacidade nos horários de pico</li><li>Raio de atendimento e quilômetros excedentes</li><li>Custos, subsídio e margem da operação</li><li>Dimensionamento conforme o nível de serviço</li></ul>
+<p style="margin-top:20px">Comece com um resumo do seu negócio. Nossa equipe conversa com você para orientar o diagnóstico e a proposta.</p>
+<p class="caption">A análise considera os dados da operação. Sua política de frete permanece sob sua decisão.</p></div>
+<div class="diagnostic-panel"><h3>Vamos entender sua operação?</h3><p class="form-note">Preencha o resumo e abra a mensagem no WhatsApp. Você revisa os dados antes de enviar.</p>
+<form id="diagnostic-form" action="https://wa.me/5527992648117" method="get">
+<div class="form-grid">
+<label>Seu nome<input name="nome" autocomplete="name" required maxlength="80"></label>
+<label>Empresa<input name="empresa" autocomplete="organization" required maxlength="100"></label>
+<label>Cidade / UF<input name="cidade" autocomplete="address-level2" placeholder="Ex.: Serra / ES" required maxlength="80"></label>
+<label>Segmento<select name="segmento" required><option value="">Selecione</option><option>Farmácia</option><option>Varejo local</option><option>Rede de lojas</option><option>Outro segmento</option></select></label>
+<label>Entregas por dia (estimativa)<input name="entregas" type="number" min="1" max="100000" step="1" inputmode="numeric" placeholder="Ex.: 40" required></label>
+<label>Raio de atendimento em km<input name="raio" type="number" min="0.1" max="1000" step="0.1" inputmode="decimal" placeholder="Ex.: 3" required></label>
+</div>
+<p class="form-note">Os campos ficam neste navegador até você abrir o WhatsApp. Ao enviar a mensagem, você compartilha os dados com a equipe para tratar sua solicitação. <a class="link-orange" href="#privacidade">Saiba como usamos esses dados.</a></p>
+<button class="btn" type="submit">Preparar diagnóstico no WhatsApp ↗</button>
+<div class="form-result" id="form-result" role="status"></div>
+<noscript><p class="form-note">Para iniciar o diagnóstico, <a href="https://wa.me/5527992648117" class="link-orange">fale com a equipe pelo WhatsApp</a>.</p></noscript>
+</form></div></div></section>
+<section class="about" id="empresa">
 
   <div class="container">
 
@@ -1150,11 +1154,17 @@
 
   </div>
 
-</section>
+<div class="container partner"><h3>Conexões que fortalecem o varejo.</h3><p>Conheça nossa proposta de parceria institucional e inteligência de última milha para o ecossistema CDL.</p><a class="link-orange" href="https://cdl.c7movi.com.br" target="_blank" rel="noopener noreferrer">Ver apresentação para a CDL ↗</a></div></section>
 
 
-<section class="contact"
-         id="contato">
+<section id="perguntas"><div class="container"><div class="section-title"><div class="section-kicker">Perguntas frequentes</div><h2>Antes de começar.</h2></div><div class="faq">
+<details><summary>A C7MOVI atende apenas farmácias?</summary><p>Farmácias são o primeiro segmento. Outros negócios do varejo podem conversar com a equipe para avaliar o desenho e a viabilidade da operação.</p></details>
+<details><summary>Como recebo uma proposta?</summary><p>Comece pela solicitação de diagnóstico. A equipe analisa demanda, horários, distâncias e capacidade para apresentar uma proposta adequada ao seu negócio.</p></details>
+<details><summary>Posso conhecer a plataforma antes de contratar?</summary><p>Sim. Solicite uma demonstração pelo WhatsApp para conhecer a proposta e os recursos disponíveis para sua operação.</p></details>
+<details><summary>A precificação muda automaticamente meu frete?</summary><p>Não. A análise apoia a tomada de decisão com dados sobre custos, raio de atendimento e dimensionamento. O estabelecimento decide sua política comercial.</p></details>
+<details><summary>Como funciona o atendimento fora do raio-base?</summary><p>Distâncias excedentes, retornos e particularidades da entrega entram na análise e nas condições da proposta. Converse com a equipe sobre sua cobertura.</p></details>
+</div></div></section>
+<section class="contact" id="contato">
 
   <div class="container">
 
@@ -1219,7 +1229,7 @@
 </section>
 
 
-</main>
+<section class="privacy" id="privacidade"><div class="container"><h2>Privacidade e contato</h2><p>Este formulário não mantém um cadastro no site e não usa armazenamento local. Os dados são usados para preparar uma mensagem que você escolhe enviar pelo WhatsApp, sujeita às práticas desse serviço. A equipe utiliza as informações recebidas para atender sua solicitação e elaborar o diagnóstico comercial.</p><p>Não envie dados de pacientes, informações de saúde ou outros dados sensíveis no diagnóstico. Para tirar dúvidas sobre seus dados ou solicitar sua exclusão dos registros de atendimento, <a class="link-orange" href="https://wa.me/5527992648117" target="_blank" rel="noopener noreferrer">entre em contato pelo WhatsApp</a>.</p><p>As imagens são carregadas do repositório público no GitHub. Instagram, Facebook, WhatsApp e a apresentação CDL são acessados quando você utiliza seus links.</p></div></section></main>
 
 
 <footer>
@@ -1242,7 +1252,7 @@
       </div>
 
 
-      <div class="footer-social">
+      <div class="footer-social"><a href="#privacidade">Privacidade</a><a href="#perguntas">Perguntas frequentes</a>
 
         <a href="https://www.instagram.com/c7movi/"
            target="_blank"
@@ -1298,5 +1308,27 @@
 </footer>
 
 
-</body>
+<a class="float-contact" href="https://wa.me/5527992648117" target="_blank" rel="noopener noreferrer" aria-label="Falar com a C7MOVI pelo WhatsApp">WhatsApp ↗</a>
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const menu = document.querySelector('#menu');
+toggle.addEventListener('click', () => {
+ const expanded = toggle.getAttribute('aria-expanded') === 'true';
+ toggle.setAttribute('aria-expanded', String(!expanded)); menu.hidden = expanded;
+});
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {menu.hidden=true;toggle.setAttribute('aria-expanded','false');}));
+document.addEventListener('keydown', e => {if(e.key==='Escape'){menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.focus();}});
+document.querySelector('#diagnostic-form').addEventListener('submit', e => {
+ e.preventDefault();
+ const form = e.currentTarget;
+ if(!form.reportValidity()) return;
+ const d = new FormData(form);
+ const message = 'Olá! Quero solicitar o diagnóstico de precificação inteligente da C7MOVI.\n\nNome: ' + d.get('nome').trim() + '\nEmpresa: ' + d.get('empresa').trim() + '\nCidade/UF: ' + d.get('cidade').trim() + '\nSegmento: ' + d.get('segmento') + '\nEntregas/dia (estimativa): ' + d.get('entregas') + '\nRaio de atendimento: ' + d.get('raio') + ' km';
+ const url = 'https://wa.me/5527992648117?text=' + encodeURIComponent(message);
+ const result = document.querySelector('#form-result');
+ result.replaceChildren();
+ const link = document.createElement('a');link.href=url;link.className='link-orange';link.textContent='Mensagem pronta. Abrir no WhatsApp ↗';link.target='_blank';link.rel='noopener noreferrer';result.appendChild(link);link.focus();
+});
+</script></body>
 </html>
+
