@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>C7MOVI | Inteligência de Última Milha</title>
+
+  <meta name="description"
+        content="C7MOVI conecta comércio, entregadores e clientes com inteligência de última milha, tecnologia logística e gestão operacional.">
+
+  <meta name="author"
+        content="C7MOVI">
+
+  <meta name="robots"
+        content="index, follow">
+
+  <meta property="og:title"
+        content="C7MOVI | Inteligência de Última Milha">
+
+  <meta property="og:description"
+        content="Tecnologia que conecta comércio, operação logística, entregadores e clientes.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://c7movi.com.br">
+
+  <meta name="theme-color"
+        content="#101b29">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #151515;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #ececec;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.75rem;
+      font-weight: 900;
+      letter-spacing: -1.4px;
+      white-space: nowrap;
+    }
+
+    .brand-c7 {
+      color: #111111;
+    }
+
+    .brand-movi {
+      color: #f36c21;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: #333333;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+
+    .menu a {
+      transition: .2s;
+    }
+
+    .menu a:hover {
+      color: #f36c21;
+    }
+
+    .nav-cta {
+      background: #f36c21;
+      color: #ffffff !important;
+      padding: 11px 18px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #f36c21;
+      color: #ffffff;
+      padding: 15px 25px;
+      border-radius: 9px;
+      font-weight: 800;
+      transition: .22s;
+      border: 1px solid #f36c21;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(243,108,33,.20);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 9px;
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,.35);
+      font-weight: 700;
+      transition: .22s;
+    }
+
+    .btn-outline:hover {
+      border-color: #f36c21;
+      color: #ff9b63;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 88% 18%,
+          rgba(243,108,33,.24),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 75% 80%,
+          rgba(243,108,33,.09),
+          transparent 26%
+        ),
+        linear-gradient(
+          135deg,
+          #09131f 0%,
+          #101d2d 54%,
+          #13243a 100%
+        );
+      color: #ffffff;
+      padding: 105px 0 100px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border: 1px solid rgba(255,255,255,.05);
+      border-radius: 50%;
+      right: -150px;
+      top: -100px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #ff955d;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-size: .80rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6.6vw, 5.4rem);
+      line-height: .98;
+      letter-spacing: -4px;
+      max-width: 800px;
+      margin-bottom: 26px;
+    }
+
+    .hero-description {
+      max-width: 670px;
+      color: #d4dce7;
+      font-size: 1.14rem;
+      margin-bottom: 35px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.065);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 25px;
+      padding: 32px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 30px 70px rgba(0,0,0,.18);
+    }
+
+    .hero-card-title {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .flow-item {
+      background: #ffffff;
+      color: #171717;
+      padding: 17px 19px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+
+    .flow-number {
+      color: #f36c21;
+      min-width: 26px;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-kicker {
+      color: #f36c21;
+      font-size: .78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      max-width: 790px;
+      margin-bottom: 44px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2.05rem, 4vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      color: #666666;
+      font-size: 1.06rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #f7f8fa;
+      padding: 31px;
+      border-radius: 18px;
+      border: 1px solid #eceef1;
+      transition: .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 17px 40px rgba(0,0,0,.05);
+    }
+
+    .card-number {
+      color: #f36c21;
+      font-weight: 900;
+      margin-bottom: 15px;
+      font-size: .82rem;
+      letter-spacing: .6px;
+    }
+
+    .card h3 {
+      font-size: 1.28rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #676767;
+      font-size: .98rem;
+    }
+
+    .dark {
+      background: #101b29;
+      color: #ffffff;
+    }
+
+    .dark .section-title p {
+      color: #c7cfda;
+    }
+
+    .dark .card {
+      background: #172638;
+      border-color: #27394d;
+    }
+
+    .dark .card h3 {
+      color: #ffffff;
+    }
+
+    .dark .card p {
+      color: #c6cfda;
+    }
+
+    .statement {
+      background: #ffffff;
+      padding: 100px 0;
+    }
+
+    .highlight {
+      font-size: clamp(2.3rem, 5vw, 4.3rem);
+      font-weight: 900;
+      line-height: 1.04;
+      max-width: 940px;
+      letter-spacing: -2.6px;
+    }
+
+    .highlight span {
+      color: #f36c21;
+    }
+
+    .highlight-small {
+      margin-top: 22px;
+      color: #6a6a6a;
+      font-size: 1.06rem;
+      max-width: 670px;
+    }
+
+    .about {
+      background: #f7f8fa;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .about-box {
+      background: #ffffff;
+      border: 1px solid #e9ebef;
+      border-radius: 18px;
+      padding: 32px;
+    }
+
+    .about-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .about-box p {
+      color: #666666;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid #eceef1;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .feature {
+      padding: 28px;
+      border-right: 1px solid #eceef1;
+    }
+
+    .feature:last-child {
+      border-right: none;
+    }
+
+    .feature strong {
+      display: block;
+      color: #f36c21;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .feature span {
+      color: #5f5f5f;
+      font-size: .94rem;
+    }
+
+    .contact {
+      background:
+        radial-gradient(
+          circle at 90% 30%,
+          rgba(243,108,33,.15),
+          transparent 30%
+        ),
+        #0c1622;
+      color: #ffffff;
+    }
+
+    .contact .section-title {
+      margin-bottom: 30px;
+    }
+
+    .contact .section-title p {
+      color: #c7cfda;
+    }
+
+    .contact-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.24);
+      padding: 11px 18px;
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: .9rem;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .social-link:hover {
+      border-color: #f36c21;
+      color: #ff985e;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      background: #080e16;
+      color: #adb6c2;
+      padding: 46px 0 34px;
+    }
+
+    .footer-main {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 35px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .footer-brand {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .footer-tagline {
+      margin-top: 4px;
+      color: #99a4b1;
+      font-size: .9rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: .84rem;
+    }
+
+    .footer-social a {
+      color: #99a4b1;
+    }
+
+    .footer-social a:hover {
+      color: #f36c21;
+    }
+
+    .footer-legal {
+      border-top: 1px solid #1b2633;
+      padding-top: 16px;
+      max-width: 940px;
+      font-size: 10px;
+      line-height: 1.5;
+      color: #606b76;
+    }
+
+    .footer-copy {
+      margin-top: 7px;
+      font-size: 10px;
+      color: #535d67;
+    }
+
+    @media (max-width: 900px) {
+
+      .menu {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feature:nth-child(2) {
+        border-right: none;
+      }
+
+      .feature:nth-child(1),
+      .feature:nth-child(2) {
+        border-bottom: 1px solid #eceef1;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .container {
+        width: min(92%, 1140px);
+      }
+
+      nav {
+        min-height: 68px;
+      }
+
+      .brand {
+        font-size: 1.5rem;
+      }
+
+      .hero {
+        padding: 72px 0;
+      }
+
+      h1 {
+        letter-spacing: -2.5px;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .feature {
+        border-right: none;
+        border-bottom: 1px solid #eceef1;
+      }
+
+      .feature:last-child {
+        border-bottom: none;
+      }
+
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "C7MOVI",
+    "legalName": "RSR VENTURES LTDA",
+    "url": "https://c7movi.com.br",
+    "telephone": "+55 27 99264-8117",
+    "taxID": "42.819.907/0001-27",
+    "sameAs": [
+      "https://www.instagram.com/c7movi/",
+      "https://www.facebook.com/C7movi/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Eldes Scherrer Souza, 2162 - Cond. Complexo Montserrat, Sala 631",
+      "addressLocality": "Serra",
+      "addressRegion": "ES",
+      "postalCode": "29167-080",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="container">
+
+    <nav>
+
+      <a href="#inicio"
+         class="brand"
+         aria-label="C7MOVI">
+
+        <span class="brand-c7">C7</span>
+        <span class="brand-movi">MOVI</span>
+
+      </a>
+
+      <div class="menu">
+
+        <a href="#solucao">
+          Solução
+        </a>
+
+        <a href="#como-funciona">
+          Como funciona
+        </a>
+
+        <a href="#empresa">
+          Sobre
+        </a>
+
+        <a href="#contato"
+           class="nav-cta">
+          Contato
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero"
+         id="inicio">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Inteligência de Última Milha
+      </div>
+
+      <h1>
+        A venda não termina no caixa.
+      </h1>
+
+      <p class="hero-description">
+
+        Ela termina na entrega.
+
+        A C7MOVI conecta comércio,
+        operação logística,
+        entregadores e clientes
+        para transformar a última milha
+        em uma operação mais inteligente,
+        organizada e eficiente.
+
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="btn"
+           href="#solucao">
+          Conheça a C7MOVI
+        </a>
+
+        <a class="btn-outline"
+           href="#contato">
+          Fale conosco
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="hero-card-title">
+        Da venda à entrega
+      </div>
+
+      <div class="flow">
+
+        <div class="flow-item">
+          <span class="flow-number">01</span>
+          Pedido
+        </div>
+
+        <div class="flow-item">
+          <span class="flow-number">02</span>
+          Agrupamento inteligente
+        </div>
+
+        <div class="flow-item">
+          <span class="flow-number">03</span>
+          Rota e execução
+        </div>
+
+        <div class="flow-item">
+          <span class="flow-number">04</span>
+          Entrega ao cliente
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="solucao">
+
+  <div class="container">
+
+    <div class="section-kicker">
+      Nossa solução
+    </div>
+
+    <div class="section-title">
+
+      <h2>
+        Tecnologia para uma logística mais inteligente.
+      </h2>
+
+      <p>
+        A C7MOVI apoia negócios que precisam ganhar
+        visibilidade, organização e eficiência
+        sobre suas operações de entrega.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-number">
+          01
+        </div>
+
+        <h3>
+          Inteligência operacional
+        </h3>
+
+        <p>
+          Organização de pedidos, demandas,
+          capacidade operacional e execução
+          em um fluxo estruturado.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-number">
+          02
+        </div>
+
+        <h3>
+          Última milha conectada
+        </h3>
+
+        <p>
+          Comércio, operação, entregadores
+          e clientes conectados à mesma
+          jornada logística.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-number">
+          03
+        </div>
+
+        <h3>
+          Decisão baseada em dados
+        </h3>
+
+        <p>
+          Mais clareza sobre custos,
+          produtividade, demanda,
+          capacidade e desempenho.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="dark"
+         id="como-funciona">
+
+  <div class="container">
+
+    <div class="section-kicker">
+      Ecossistema C7MOVI
+    </div>
+
+    <div class="section-title">
+
+      <h2>
+        Do pedido à entrega,
+        tudo conectado.
+      </h2>
+
+      <p>
+        Uma arquitetura pensada para reduzir
+        improvisos e transformar a entrega
+        em parte estratégica da experiência
+        do cliente.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-number">
+          COMÉRCIO
+        </div>
+
+        <h3>
+          Recebe e organiza
+        </h3>
+
+        <p>
+          Os pedidos entram em um fluxo
+          operacional estruturado,
+          pronto para execução.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-number">
+          C7MOVI
+        </div>
+
+        <h3>
+          Analisa e direciona
+        </h3>
+
+        <p>
+          Inteligência operacional
+          para apoiar distribuição,
+          rota e tomada de decisão.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-number">
+          CLIENTE
+        </div>
+
+        <h3>
+          Recebe com visibilidade
+        </h3>
+
+        <p>
+          A entrega deixa de ser uma
+          caixa-preta e passa a fazer
+          parte da experiência de compra.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="statement">
+
+  <div class="container">
+
+    <div class="highlight">
+
+      Farmácias são o primeiro vertical.
+
+      <span>
+        Não o limite.
+      </span>
+
+    </div>
+
+    <p class="highlight-small">
+
+      A arquitetura da C7MOVI foi concebida
+      para evoluir com diferentes segmentos
+      que dependem de uma última milha
+      eficiente e conectada.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-kicker">
+      Uma nova visão da entrega
+    </div>
+
+    <div class="section-title">
+
+      <h2>
+        Mais que deslocamento.
+        Inteligência operacional.
+      </h2>
+
+      <p>
+        A última milha pode deixar de ser
+        apenas um custo operacional para
+        se transformar em diferencial
+        competitivo.
+      </p>
+
+    </div>
+
+
+    <div class="features">
+
+      <div class="feature">
+
+        <strong>
+          Operação
+        </strong>
+
+        <span>
+          Mais organização e controle
+          sobre a jornada da entrega.
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>
+          Velocidade
+        </strong>
+
+        <span>
+          Processos orientados para
+          eficiência operacional.
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>
+          Visibilidade
+        </strong>
+
+        <span>
+          Mais clareza para comércio,
+          operação e cliente.
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>
+          Dados
+        </strong>
+
+        <span>
+          Informação para apoiar
+          melhores decisões.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about"
+         id="empresa">
+
+  <div class="container">
+
+    <div class="section-kicker">
+      Sobre
+    </div>
+
+    <div class="section-title">
+
+      <h2>
+        C7MOVI
+      </h2>
+
+      <p>
+        Inteligência, integração
+        e profissionalização da
+        última milha.
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+      <div class="about-box">
+
+        <h3>
+          Nosso propósito
+        </h3>
+
+        <p>
+
+          Transformar a entrega em parte
+          estratégica da experiência do cliente,
+          usando tecnologia, processos e
+          inteligência operacional para aproximar
+          comércio, logística e consumidor.
+
+        </p>
+
+      </div>
+
+
+      <div class="about-box">
+
+        <h3>
+          Tecnologia que conecta
+        </h3>
+
+        <p>
+
+          A C7MOVI integra comércio,
+          inteligência operacional,
+          entregadores e clientes
+          em uma jornada de última milha
+          mais eficiente, previsível
+          e conectada.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact"
+         id="contato">
+
+  <div class="container">
+
+    <div class="section-kicker">
+      Contato
+    </div>
+
+    <div class="section-title">
+
+      <h2>
+        Vamos mover seu negócio?
+      </h2>
+
+      <p>
+        Entre em contato para conhecer
+        a proposta da C7MOVI e conversar
+        sobre inteligência de última milha.
+      </p>
+
+    </div>
+
+
+    <div class="contact-actions">
+
+      <a class="btn"
+         href="https://wa.me/5527992648117"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        Falar pelo WhatsApp
+
+      </a>
+
+    </div>
+
+
+    <div class="social-links">
+
+      <a class="social-link"
+         href="https://www.instagram.com/c7movi/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        Instagram @c7movi
+
+      </a>
+
+
+      <a class="social-link"
+         href="https://www.facebook.com/C7movi/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        Facebook C7MOVI
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+
+    <div class="footer-main">
+
+      <div>
+
+        <div class="footer-brand">
+          C7MOVI
+        </div>
+
+        <div class="footer-tagline">
+          Inteligência de Última Milha
+        </div>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <a href="https://www.instagram.com/c7movi/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          Instagram
+
+        </a>
+
+        <a href="https://www.facebook.com/C7movi/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          Facebook
+
+        </a>
+
+        <a href="https://wa.me/5527992648117"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          WhatsApp
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-legal">
+
+      C7MOVI é uma iniciativa operada por
+      RSR VENTURES LTDA •
+      CNPJ 42.819.907/0001-27 •
+      Avenida Eldes Scherrer Souza, 2162 •
+      Cond. Complexo Montserrat, Sala 631 •
+      Serra/ES • CEP 29167-080
+
+    </div>
+
+
+    <div class="footer-copy">
+
+      © 2026 C7MOVI.
+      Todos os direitos reservados.
+
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
