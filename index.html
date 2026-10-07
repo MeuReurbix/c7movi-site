@@ -1069,23 +1069,9 @@ button.btn{font:inherit;cursor:pointer;font-weight:700}.form-result{margin-top:1
 <section class="tinted" id="diagnostico"><div class="container split">
 <div class="diagnostic-copy"><div class="section-kicker">Precificação inteligente</div><h2>Você conhece o custo real da sua entrega?</h2><p>O preço do frete é apenas uma parte da conta. Volume, horários, equipe, distância e nível de serviço ajudam a entender o que sua operação precisa.</p>
 <ul class="check-list"><li>Demanda e capacidade nos horários de pico</li><li>Raio de atendimento e quilômetros excedentes</li><li>Custos, subsídio e margem da operação</li><li>Dimensionamento conforme o nível de serviço</li></ul>
-<p style="margin-top:20px">Comece com um resumo do seu negócio. Nossa equipe conversa com você para orientar o diagnóstico e a proposta.</p>
+<p style="margin-top:20px">Comece pela verificação do CNPJ. O portal orienta o acesso ao diagnóstico, à análise de precificação e à proposta da sua operação.</p>
 <p class="caption">A análise considera os dados da operação. Sua política de frete permanece sob sua decisão.</p></div>
-<div class="diagnostic-panel"><h3>Vamos entender sua operação?</h3><p class="form-note">Preencha o resumo e abra a mensagem no WhatsApp. Você revisa os dados antes de enviar.</p>
-<form id="diagnostic-form" action="https://wa.me/5527992648117" method="get">
-<div class="form-grid">
-<label>Seu nome<input name="nome" autocomplete="name" required maxlength="80"></label>
-<label>Empresa<input name="empresa" autocomplete="organization" required maxlength="100"></label>
-<label>Cidade / UF<input name="cidade" autocomplete="address-level2" placeholder="Ex.: Serra / ES" required maxlength="80"></label>
-<label>Segmento<select name="segmento" required><option value="">Selecione</option><option>Farmácia</option><option>Varejo local</option><option>Rede de lojas</option><option>Outro segmento</option></select></label>
-<label>Entregas por dia (estimativa)<input name="entregas" type="number" min="1" max="100000" step="1" inputmode="numeric" placeholder="Ex.: 40" required></label>
-<label>Raio de atendimento em km<input name="raio" type="number" min="0.1" max="1000" step="0.1" inputmode="decimal" placeholder="Ex.: 3" required></label>
-</div>
-<p class="form-note">Os campos ficam neste navegador até você abrir o WhatsApp. Ao enviar a mensagem, você compartilha os dados com a equipe para tratar sua solicitação. <a class="link-orange" href="#privacidade">Saiba como usamos esses dados.</a></p>
-<button class="btn" type="submit">Preparar diagnóstico no WhatsApp ↗</button>
-<div class="form-result" id="form-result" role="status"></div>
-<noscript><p class="form-note">Para iniciar o diagnóstico, <a href="https://wa.me/5527992648117" class="link-orange">fale com a equipe pelo WhatsApp</a>.</p></noscript>
-</form></div></div></section>
+<div class="diagnostic-panel"><h3>Inicie seu diagnóstico</h3><p class="form-note">Informe o CNPJ no portal C7MOVI para verificar seu cadastro e continuar o diagnóstico da operação.</p><ol class="check-list"><li>Verifique o CNPJ da empresa.</li><li>Preencha os dados operacionais no formulário liberado pelo portal.</li><li>Continue pelo fluxo de geração do diagnóstico e da proposta.</li></ol><a class="btn" id="diagnostic-access" href="https://script.google.com/macros/s/AKfycbxp3R-jYRyvXr26cPBJtaGCaZwTXmRXBaondz4voAjOvQr9JkCCfk-fZ1CONVJeNypW/exec" target="_blank" rel="noopener noreferrer">Iniciar diagnóstico e precificação ↗</a><p class="form-note">Já possui diagnóstico ou proposta? A verificação do CNPJ orienta a continuidade do seu atendimento.</p><a class="link-orange" href="https://wa.me/5527992648117" target="_blank" rel="noopener noreferrer">Precisa de ajuda? Fale com a equipe ↗</a></div></div></section>
 <section class="about" id="empresa">
 
   <div class="container">
@@ -1159,7 +1145,7 @@ button.btn{font:inherit;cursor:pointer;font-weight:700}.form-result{margin-top:1
 
 <section id="perguntas"><div class="container"><div class="section-title"><div class="section-kicker">Perguntas frequentes</div><h2>Antes de começar.</h2></div><div class="faq">
 <details><summary>A C7MOVI atende apenas farmácias?</summary><p>Farmácias são o primeiro segmento. Outros negócios do varejo podem conversar com a equipe para avaliar o desenho e a viabilidade da operação.</p></details>
-<details><summary>Como recebo uma proposta?</summary><p>Comece pela solicitação de diagnóstico. A equipe analisa demanda, horários, distâncias e capacidade para apresentar uma proposta adequada ao seu negócio.</p></details>
+<details><summary>Como recebo uma proposta?</summary><p>Acesse o portal de diagnóstico e verifique seu CNPJ. Continue pelo formulário da operação e pelo fluxo de geração do diagnóstico e da proposta. Se já houver um registro, o portal orienta seu acesso.</p></details>
 <details><summary>Posso conhecer a plataforma antes de contratar?</summary><p>Sim. Solicite uma demonstração pelo WhatsApp para conhecer a proposta e os recursos disponíveis para sua operação.</p></details>
 <details><summary>A precificação muda automaticamente meu frete?</summary><p>Não. A análise apoia a tomada de decisão com dados sobre custos, raio de atendimento e dimensionamento. O estabelecimento decide sua política comercial.</p></details>
 <details><summary>Como funciona o atendimento fora do raio-base?</summary><p>Distâncias excedentes, retornos e particularidades da entrega entram na análise e nas condições da proposta. Converse com a equipe sobre sua cobertura.</p></details>
@@ -1229,7 +1215,7 @@ button.btn{font:inherit;cursor:pointer;font-weight:700}.form-result{margin-top:1
 </section>
 
 
-<section class="privacy" id="privacidade"><div class="container"><h2>Privacidade e contato</h2><p>Este formulário não mantém um cadastro no site e não usa armazenamento local. Os dados são usados para preparar uma mensagem que você escolhe enviar pelo WhatsApp, sujeita às práticas desse serviço. A equipe utiliza as informações recebidas para atender sua solicitação e elaborar o diagnóstico comercial.</p><p>Não envie dados de pacientes, informações de saúde ou outros dados sensíveis no diagnóstico. Para tirar dúvidas sobre seus dados ou solicitar sua exclusão dos registros de atendimento, <a class="link-orange" href="https://wa.me/5527992648117" target="_blank" rel="noopener noreferrer">entre em contato pelo WhatsApp</a>.</p><p>As imagens são carregadas do repositório público no GitHub. Instagram, Facebook, WhatsApp e a apresentação CDL são acessados quando você utiliza seus links.</p></div></section></main>
+<section class="privacy" id="privacidade"><div class="container"><h2>Privacidade e contato</h2><p>O site institucional não coleta os dados do diagnóstico. Ao iniciar, você acessa o portal C7MOVI hospedado no Google Apps Script, que verifica o CNPJ e controla o acesso. O formulário operacional utiliza o Tally; as respostas são integradas à base central no Google Sheets para elaborar o diagnóstico e a proposta. Ao usar o WhatsApp, você escolhe quais informações enviar à equipe, sujeito às práticas desse serviço.</p><p>Não envie dados de pacientes, informações de saúde ou outros dados sensíveis no diagnóstico. Para tirar dúvidas sobre seus dados ou solicitar sua exclusão dos registros de atendimento, <a class="link-orange" href="https://wa.me/5527992648117" target="_blank" rel="noopener noreferrer">entre em contato pelo WhatsApp</a>.</p><p>As imagens são carregadas do repositório público no GitHub. Instagram, Facebook, WhatsApp e a apresentação CDL são acessados quando você utiliza seus links.</p></div></section></main>
 
 
 <footer>
@@ -1318,17 +1304,7 @@ toggle.addEventListener('click', () => {
 });
 menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {menu.hidden=true;toggle.setAttribute('aria-expanded','false');}));
 document.addEventListener('keydown', e => {if(e.key==='Escape'){menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.focus();}});
-document.querySelector('#diagnostic-form').addEventListener('submit', e => {
- e.preventDefault();
- const form = e.currentTarget;
- if(!form.reportValidity()) return;
- const d = new FormData(form);
- const message = 'Olá! Quero solicitar o diagnóstico de precificação inteligente da C7MOVI.\n\nNome: ' + d.get('nome').trim() + '\nEmpresa: ' + d.get('empresa').trim() + '\nCidade/UF: ' + d.get('cidade').trim() + '\nSegmento: ' + d.get('segmento') + '\nEntregas/dia (estimativa): ' + d.get('entregas') + '\nRaio de atendimento: ' + d.get('raio') + ' km';
- const url = 'https://wa.me/5527992648117?text=' + encodeURIComponent(message);
- const result = document.querySelector('#form-result');
- result.replaceChildren();
- const link = document.createElement('a');link.href=url;link.className='link-orange';link.textContent='Mensagem pronta. Abrir no WhatsApp ↗';link.target='_blank';link.rel='noopener noreferrer';result.appendChild(link);link.focus();
-});
+
 </script></body>
 </html>
 
